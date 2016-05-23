@@ -236,9 +236,9 @@ function animate() {
 
 	requestAnimationFrame( animate );
 
-	groups[0].rotation.x += 0.005;
-	groups[1].rotation.y += 0.005;
-	groups[2].rotation.z += 0.005;
+	groups[0].rotation.x += 0.002;
+	groups[1].rotation.y += 0.002;
+	groups[2].rotation.z += 0.002;
 
 	ms_Water.material.uniforms.time.value += 1.0 / 60.0;
 
