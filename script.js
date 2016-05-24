@@ -6,7 +6,7 @@ $.getJSON( "assets/words.json", function( data ) {
 	titles = Object.keys(words);
 
 	//Init Words
-	for (var i = 0; i < 200; i++) {
+	for (var i = 0; i < 400; i++) {
 		table.push([genWord(),"","",0,i]);
 	}
 	init();
@@ -54,7 +54,7 @@ function init() {
 		alpha:  1.0,
 		sunDirection: directionalLight.position.normalize(),
 		sunColor: 0xffffff,
-		waterColor: 0x000005,
+		waterColor: 0x111111,
 		betaVersion: 0,
 		side: THREE.DoubleSide
 	});
@@ -64,7 +64,7 @@ function init() {
 	);
 	aMeshMirror.add(ms_Water);
 	aMeshMirror.rotation.z = Math.PI * 0.2;
-	aMeshMirror.rotation.x = Math.PI;
+	//aMeshMirror.rotation.x = Math.PI;
 
 	scene.add(aMeshMirror);
 
